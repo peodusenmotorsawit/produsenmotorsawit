@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Produsen No.1 Indonesia - Motor Roda 3 Sawit</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.hero {
+    background: linear-gradient(135deg,#000,#198754);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+.urgency {
+    background: #dc3545;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.product-img {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.product-img:hover {
+    transform: scale(1.05);
+}
+.btn-order {
+    font-size: 18px;
+    padding: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="hero">
+    <h1>PRODUSEN NO.1 INDONESIA</h1>
+    <h3>Motor Roda 3 Langsir Sawit</h3>
+    <p>Solusi Angkut Sawit Lebih Cepat, Kuat & Hemat Biaya</p>
+</div>
+
+<!-- URGENCY -->
+<div class="urgency">
+    ⚠️ PROMO TERBATAS! STOK HAMPIR HABIS! PESAN SEKARANG SEBELUM KEHABISAN ⚠️
+</div>
+
+<!-- PRODUK -->
+<div class="container mt-5">
+    <div class="row text-center">
+        
+        <div class="col-md-4 mb-4">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVLbiA5uQvt7ikqzNhrtbBNQzQkf-RMiBtASdMeMnyEqDAFIQVPjKQJeH61fPcW8zByAfFp1hbGEocBLi9SegwCUeL13RcJJIAbt5G0FI3ApSF8gtEzggZp-J1dXYflZXgaqJU9DQNzQRhlx4TxZEjtpB3qe9DXG_I0OCFRP8HVmknJIwuxQD_mMFgskEI/s320/fb_img_17031768519036452697426646919634.jpg" class="img-fluid product-img">
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHwZYNBoG07AY-3P5CFK0H8YBueabOhFlTSz3xBpBBPk3D6P4dDrW1rDY3RQDDl7je-LYuQgz_EbBEcEOgf1bxZb0hs7ULGrZ4FnZzoZMeYGvvJCPH-BbZqluhKwogHURfeesHFVqBcUBln_imMkAqB8Gx3dmQ3tNp4Gs1Y723IQ02O-aDBpITO27Scs1E/s320/fb_img_17031768538986230715647919111127.jpg" class="img-fluid product-img">
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9X8N1OHp5wymsQZeTpMt3Bd0KTowaybvDjQX5epiBOBW5wnmC4OHX1BaAHUfnZzDHXQGt5XxjOaxdTjpB0CATD-hD_wa2shzOJQCxutRh8nQc3LsF-Jpuv2j82B9Ozk0RLjRTRU0_j1jqLVDeYRjke5WHvE_LblIDZxSi2bTbFxALHfynBzT7eFuXCK7F/s320/fb_img_17031768558775440973426189421969.jpg" class="img-fluid product-img">
+        </div>
+
+    </div>
+</div>
+
+<!-- DESKRIPSI -->
+<div class="container mt-4">
+    <div class="card p-4 shadow">
+        <h4>Deskripsi Produk</h4>
+        <p>
+        Motor roda 3 langsir sawit adalah solusi terbaik untuk membantu proses pengangkutan hasil panen sawit secara cepat, efisien, dan hemat biaya operasional.
+        Dirancang dengan mesin bertenaga dan rangka kuat, mampu melewati medan berat seperti kebun, tanah berlumpur, dan jalan tidak rata.
+        </p>
+
+        <ul>
+            <li>✔ Mesin kuat & irit bahan bakar</li>
+            <li>✔ Kapasitas angkut besar</li>
+            <li>✔ Cocok untuk kebun sawit & perkebunan</li>
+            <li>✔ Perawatan mudah</li>
+            <li>✔ Tahan lama & siap kerja berat</li>
+        </ul>
+
+        <h5 class="text-danger">🔥 PROMO SPESIAL HARI INI 🔥</h5>
+        <p><b>GRATIS ONGKIR SELURUH INDONESIA via JNT CARGO</b></p>
+    </div>
+</div>
+
+<!-- FORM ORDER -->
+<div class="container mt-5 mb-5">
+    <div class="card p-4 shadow">
+        <h4 class="text-center mb-3">FORM PEMESANAN</h4>
+
+        <form onsubmit="kirimWA(); return false;">
+            <div class="mb-3">
+                <label>Nama Pembeli</label>
+                <input type="text" id="nama" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Nomor HP</label>
+                <input type="text" id="hp" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Alamat</label>
+                <textarea id="alamat" class="form-control" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label>Pengiriman</label>
+                <input type="text" class="form-control" value="JNT CARGO (GRATIS ONGKIR)" readonly>
+            </div>
+
+            <div class="mb-3">
+                <label>Pembayaran</label>
+                <input type="text" class="form-control" value="Bank JAGO - 1828292929 - SUTANTO" readonly>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100 btn-order">
+                🔥 PESAN SEKARANG (STOK TERBATAS)
+            </button>
+        </form>
+    </div>
+</div>
+
+<script>
+function kirimWA() {
+    var nama = document.getElementById("nama").value;
+    var hp = document.getElementById("hp").value;
+    var alamat = document.getElementById("alamat").value;
+
+    var pesan = "ORDER MOTOR RODA 3 SAWIT%0A%0A"
+              + "Nama: " + nama + "%0A"
+              + "No HP: " + hp + "%0A"
+              + "Alamat: " + alamat + "%0A"
+              + "Pengiriman: JNT Cargo (GRATIS)%0A"
+              + "Pembayaran: Bank JAGO - 1828292929 - SUTANTO%0A%0A"
+              + "Mohon segera diproses, saya siap transfer.";
+
+    window.open("https://wa.me/6285157077789?text=" + pesan, "_blank");
+}
+</script>
+
+</body>
+</html>
